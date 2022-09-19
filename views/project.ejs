@@ -60,11 +60,11 @@
        <a class="link" href="/projects/<%=project._id%>">
         <div class="col-md-3">
          <div class="card">
-            <h3><b><%=project.title.substring(0,30)%></b></h3>
-            <h6><%=project.descrip.substring(0,80)%>... </h6>
-            <h6><strong>Skills Required: <%=project.skills.substring(0,50)%> </strong></h6>
+            <h2><b><%=project.title.substring(0,30)%></b></h2>
+            <h5><%=project.descrip.substring(0,80)%>... </h5>
+            <h4><strong>Skills Required: <%=project.skills.substring(0,50)%> </strong></h4>
             
-            <p> <a href="/userprofile/<%=project.owner.id%>">Created by <%=project.owner.username%></a></p>
+            <p style="font-size: 1.8rem"> <a href="/userprofile/<%=project.owner.id%>">Created by <%=project.owner.username%></a></p>
             <p>Max:<%=project.max%> <span class="want">Want:<%=project.need%></span></p>
         
           </div>
@@ -99,7 +99,7 @@
             <div class="Messenger_content">
               <div class="Messages">
                 <div class="Messages_list"> 
-                  <p>If finding difficulty in asking questions type 'suggest'. I will recommend you some questions to ask. </p>
+                  <p style="background-color: rgb(242, 247, 237); padding:5px; border-radius:   5px ">If finding difficulty in asking questions type 'suggest'. I will recommend you some questions to ask. </p>
                   <p>Your Questions</p>
                  <% queries.forEach(function(query){%>
                     <%var str = query.toString()%>

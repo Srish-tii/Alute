@@ -64,14 +64,14 @@
     
       <div class="column text-center">
         
-          <div class="card" style="background-color: rgb(242, 247, 237);"> 
-            <img src="<%=item.img.path%>" alt="Avatar" style="width:250px; border-radius: 20px; margin-bottom:10px">
+          <div class="card" style="background-color: rgb(242, 247, 237);padding:15px"> 
+            <img src="<%=item.img.path%>" alt="Avatar" style="width:200px; border-radius: 20px; margin-bottom:10px; margin-top: 0px">
          
-            <h2><%=item.title.substring(0,20)%></h2>
-          
-             <h4> <%=item.description%></h4>
+            <div style="font-size: 25px"><strong><%=item.title%></strong></div>
+           <br>
+             <h6 style="text-align: justify;"> <%=item.description%></h6>
              <strong> <div style="font-size: 20px;"><%=item.swag%></div></strong>
-            <p>Credits:<%=item.credits%> <span style="margin-left: 10px;">Alutoze awarded:<%=item.alutoze%></span></p>
+            <p>Credits:<%=item.credits%> <span style="margin-left: 10px;"><br>Alutoze awarded:<%=item.alutoze%></span></p>
             <div class="task text-center">
              
               <button type="button" class="btn" data-toggle="modal" data-target="#exampleModalCenter-<%=item._id%>"> Spend Credits</button>

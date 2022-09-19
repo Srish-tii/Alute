@@ -40,7 +40,7 @@ app.use(methodOverride("_method"));
 app.set("view engine", "ejs");
 
 mongoose.connect(
-  "mongodb+srv://kartik_alute:Test123@cluster0.8be9m.mongodb.net/alute?retryWrites=true&w=majority",
+  "mongodb+srv://AluteSrishti:test1234@cluster0.0k5gd.mongodb.net/AluteDatabase?retryWrites=true&w=majority",
   { useNewUrlParser: true, useUnifiedTopology: true, useFindAndModify: false }
 );
 
@@ -639,7 +639,7 @@ app.post("/credits/:projectId/:userId",middleware.isLoggedIn,function (req, res)
 );
 
 app.get("/admin", middleware.isLoggedIn, function (req, res) {
-  if (req.user.username.toLowerCase() === "kartikkhanna2000@gmail.com") {
+  if (req.user.username.toLowerCase() === "srishtilodha2000@gmail.com") {
     Credit.find({},function(err,foundRequests){
       if(err){
         console.log(err);
@@ -652,7 +652,7 @@ app.get("/admin", middleware.isLoggedIn, function (req, res) {
   }
 });
 app.get("/admin/:id",function(req,res){
-  if (req.user.username.toLowerCase() === "kartikkhanna2000@gmail.com") {
+  if (req.user.username.toLowerCase() === "srishtilodha2000@gmail.com") {
     Credit.findById(req.params.id,function(err,foundApplication){
       if(err){
         console.log(err);
@@ -746,7 +746,7 @@ app.post("/creditsdelete/:id",function(req,res){
 })
 
 app.get("/post", middleware.isLoggedIn, function (req, res) {
-  if (req.user.username.toLowerCase() === "kartikkhanna2000@gmail.com") {
+  if (req.user.username.toLowerCase() === "srishtilodha2000@gmail.com") {
     
         res.render("post", { user: req.user });
      
@@ -891,8 +891,8 @@ app.post("/track/:id",function(req,res){
 
 let port = process.env.PORT;
 if (port == null || port == "") {
-  port = 9000;
+  port = 3000;
 }
 app.listen(port, function () {
-  console.log("Server started successfully at port 9000");
+  console.log("Server started successfully at port 3000");
 });

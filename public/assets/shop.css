@@ -143,12 +143,12 @@ li a
       .card {
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
       
-        margin-bottom: 15px;
+        margin-bottom: 40px;
         background-color: rgb(242, 247, 237);
         border-radius: 20px;
         padding-bottom: 50px;
     
-       height: 900px;
+        height: 580px;
   
       }
       .card p{

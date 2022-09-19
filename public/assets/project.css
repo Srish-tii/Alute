@@ -93,7 +93,7 @@ li a
         background-color: #0d0744;
         color: #ffffff;
         padding: 12px 20px;
-        font-size: 1.2rem
+        font-size: 1.8rem
         
 
     }
@@ -125,12 +125,15 @@ li a
       /* Style the counter cards */
       .card {
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-        padding: 30px;
-        background-image: url("/public/images/bg.png");
+        padding: 10px 30px;
+        /*background-image: url("/public/images/bg.png");*/
+        background-color: rgb(242, 247, 237);
+        
+        color:#0d0744;
         margin-bottom: 15px;
-        background-color: #ffffff;
         border-radius: 20px;
         height: 350px;
+
       }
       .card p{
         font-family: 'Cinzel';
@@ -159,7 +162,7 @@ li a
 
 
 .footer {
-    
+    position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;

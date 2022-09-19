@@ -237,3 +237,17 @@ li a
     font-weight: bolder;
     color:white;
  }
+ #toabout{
+    outline:none;
+    background-color: rgb(47, 161, 186); 
+    color:white;
+    border-radius: 10px; 
+    font-size:  1.2rem;
+    border: none;
+    padding: 10px; 
+    font-family:  Galdeano;
+    margin-bottom: 10px;
+ }
+ #toabout:hover{
+    font-weight:bold;
+ }
